@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #container {
+        position: relative;
+        margin:0 auto;
+        top: 50%;
+        margin-top: 225px;
+        width: 450px;
+        height: 450px;
+        background-color: #ccc;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .block {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        background-color: #ddd;
+    }
+</style>    
+</head>
+<body>
+    <div id="container">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    ;(function () {
+        var cont = document.querySelector("#container");
+        
+        cont.addEventListener('click', function (ev) {
+            ev = ev || window.event;
+            var tar = ev.target;
+
+            if(tar && tar.className.toUpperCase() === 'BLOCK') {
+                tar.style.backgroundColor = randomColor();
+            }
+
+        }, false);
+
+        function randomColor () {
+            var _clr = "#";
+            var _arr = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+
+            for(var i=0; i<6; i++) {
+                _clr += _arr[Math.ceil(Math.random()*_arr.length-1)];
+            }
+            return _clr;
+        }
+
+    })();
+</script>
+</html>

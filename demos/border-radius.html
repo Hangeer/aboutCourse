@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-radius</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .blocks {
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            background-color: #ccc;
+        }
+        .rect {
+            width: 100px;
+            height: 200px;
+            margin-top: 100px;
+            background-color: #ccc;
+        }
+        .item-one {
+            border-radius: 50px;
+        }
+        .item-two {
+            border-radius: 50% 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blocks item-one">
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        </div>
+        <div class="rect item-one">
+            width: 100px;
+            height: 200px;
+            border-radius: 50px;
+        </div>
+        <div class="blocks item-two">
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        </div>
+        <div class="rect item-two">
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+        </div>
+    </div>
+</body>
+</html>

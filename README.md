@@ -46,7 +46,7 @@
         +   做点简单的题提升下兴趣？（codewars）
             Array.prototype.*
             String.prototype.*
-            通过这个讲下返回值,arguments对象,回调函数,通过 call 改变上下文的使用,是如何改变的
+            通过这个讲下返回值, arguments对象, 回调函数, 通过 call 改变上下文的使用,是如何改变的
             bind 方法
             bind 和 call apply 的不同
                 +   返回值

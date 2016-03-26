@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callback</title>
+</head>
+<body>
+    
+
+</body>
+<script type="text/javascript">
+    ;(function () {
+        function handler (yourEvent, callback) {
+            var obj = {};
+            obj.eventType = yourEvent;
+            console.log('this is handler');
+            console.log('now callback');
+            callback(obj);
+        }
+        handler('click', function (obj) {
+            console.log('this is callback');
+            console.log(obj);
+        });
+    })();
+</script>
+</html>

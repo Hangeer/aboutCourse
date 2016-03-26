@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BoxSizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .content-box {
+            box-sizing: content-box;
+            border: 5px solid #ccc;
+            padding: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ace;
+        }
+        .border-box {
+            box-sizing: border-box;
+            border: 5px solid #ccc;
+            padding: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ace;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        yaerma
+    </div>
+    <div class="border-box">
+        yaerma
+    </div>
+    <!--然后看一下盒模型-->
+</body>
+</html>
